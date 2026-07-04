@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    
+    <style>
+        body{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:600px;
+        }
+        body{
+            background: linear-gradient(to right,#4facfe,#00f2fe);
+        }
+
+        
+        button{
+            background:#12c8e4;
+            color:white;
+        }
+        button:hover{
+            background:#159cda;
+        }    
+
+        
+        .Form-box{
+                    width:350px;
+                    background:white;
+                    padding:25px;
+                    border-radius:15px;
+                    text-align:center;
+                    box-shadow:0px 0px 15px gray;
+                    background-color: rgb(15, 169, 169);
+        }
+        .Form-box{
+            background-color:#ffffff;
+        }
+        
+        .img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        button{
+            height:30px;
+            width:60px;
+            background-color: white;
+            color:black;
+                
+        }
+        
+
+       
+
+    </style>
+</head>
+<body>
+    <form action="file2.html">
+        <div class="Form-box">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="img" class="img">
+            <h2>Login Form</h2>
+            <label for="name" class="details"  >Name:</label>
+            <input type="text" placeholder="enter your name" id="name"  pattern="[A-Za-z]+" title="name should only contain letters" required >
+            <br>
+            <br>
+            <label for="emailid" class="details" >Email:</label>
+            <input type="email" placeholder="enter mail id" id="emailid" required >
+            <br>
+            <br>
+            <label for="mobileno" class="details" >Phone Number:</label>
+            <input type="tel" placeholder="enter number" id="mobileno" pattern="[0-9]{10}" title="enter exactly ten digits" required>
+            <br>
+            <br>
+            <label for="password">Password</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}"
+                minlength="8"
+                required>
+            <br>
+            <br>
+            <button type="submit">Submit</button> 
+        </div>
+    </form>
+    
+</body>
+</html>
